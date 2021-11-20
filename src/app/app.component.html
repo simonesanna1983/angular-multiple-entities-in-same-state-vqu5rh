@@ -1,0 +1,15 @@
+<h1>
+ NgRx Entity Rocks!
+</h1>
+
+<p>This a example of a state using multiple entities</p>
+
+<p>List of Cars</p>
+<ul>
+  <li *ngFor="let car of carList$ | async"> {{ car.brand }} / {{ car.color }}</li>
+</ul>
+
+<p>List of Places</p>
+<ul>
+  <li *ngFor="let place of placeList$ | async"> {{ place.name }}</li>
+</ul>
